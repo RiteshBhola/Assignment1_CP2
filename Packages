@@ -1,0 +1,37 @@
+Gauss Elimination
+Lapack:xGETRF 
+GSL:nt gsl_linalg_LU_decomp(gsl_matrix * A, gsl_permutation * p, int * signum)
+Numpy:numpy.linalg.solve
+
+conjugate gradient
+Scipy:scipy.sparse.linalg.cg
+GSL:gsl_multimin_fdfminimizer
+
+LU
+lapack:xGETRF 
+gsl:int gsl_linalg_LU_decomp(gsl_matrix * A, gsl_permutation * p, int * signum)
+scipy:scipy.linalg.lu
+
+QR
+Lapack: xGEQRF
+numpy:numpy.linalg.qr
+GSL:nt gsl_linalg_QR_decomp(gsl_matrix * A, gsl_vector * tau)
+
+SVD
+numpy:numpy.linalg.svd
+GSL:int gsl_linalg_SV_decomp
+lapack:DGESVD
+
+real symmetric eigenvalue
+Lapack:SSYEV
+numpy:umpy.linalg.eigh
+gsl:nt gsl_eigen_symm(gsl_matrix * A, gsl_vector * eval, gsl_eigen_symm_workspace * w)
+
+complex hermitian
+numpy:umpy.linalg.eigh
+lapack:CHEEV 
+
+general eigenvalue
+numpy:umpy.linalg.eigvals
+gsl:int gsl_eigen_gen(gsl_matrix * A, gsl_matrix * B, gsl_vector_complex * alpha, gsl_vector * beta, gsl_eigen_gen_workspace * w)
+Lapack:ZGEEVX
