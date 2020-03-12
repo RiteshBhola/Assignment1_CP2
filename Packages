@@ -1,3 +1,5 @@
+Libraries for diffrent algorithms
+
 Gauss Elimination
 Lapack:xGETRF 
 GSL:nt gsl_linalg_LU_decomp(gsl_matrix * A, gsl_permutation * p, int * signum)
